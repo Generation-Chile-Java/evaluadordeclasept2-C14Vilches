@@ -1,18 +1,31 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ERMc_VB4)
-### **Instrucciones para el Ejercicio "EvaluadorDeClases":**
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/k2NE67w7)
+### **Instrucciones para la 2da Parte del Ejercicio "EvaluadorDeClases":**
 
-1. **Abrir IntelliJ IDEA:**
-    - Abre tu entorno de desarrollo IntelliJ IDEA.
-2. **Crear Proyecto:**
-    - Crea un nuevo proyecto llamado “EvaluadorDeClases”.
-3. **Crear Clase "LibretaDeNotas":**
-    - Dentro del proyecto, crea una nueva clase llamada **`LibretaDeNotas`**.
-4. **Implementar Código del LibretaDeNotas:**
-    - En la clase **`LibretaDeNotas`**, escribe el código para evaluar las calificaciones de un estudiante para tres materias distintas como mínimo.
-    - Pide al usuario que ingrese la calificación del estudiante por cada materia y guarda cada valor en su variable.
-    - Utiliza estructuras condicionales (**`if`**, **`else if`**, **`else`**) para determinar y mostrar la calificación final correspondiente según las siguientes condiciones:
-        - "No Aprobado" si la calificación es 3 o menos.
-        - "Insuficiente" si la calificación es mayor que 3 pero menor o igual a 5.
-        - "Aceptable" si la calificación es mayor que 5 pero menor o igual a 8.
-        - "Excelente" si la calificación es 10.
-        - Si el usuario ingresa un número negativo o fuera del rango de 0 a 10, muestra un mensaje indicando que la entrada es inválida.
+1. **Modificar la Clase `Evaluador`:**
+    - Renombra la clase **`Evaluador`** a **`LibretaDeNotas`** para que pueda evaluar y almacenar las calificaciones de una lista de estudiantes en lugar de una única calificación.
+    - Utiliza un **`HashMap`** para almacenar las calificaciones de los estudiantes, donde la llave es el nombre del estudiante y el valor es un **`ArrayList`** de notas.
+    - Solicita al usuario que ingrese la cantidad de alumnos y la cantidad de notas por alumno.
+    - Solicita el nombre de cada alumno y las notas correspondientes, almacenándolas en el **`HashMap`**.
+2. **Recorrer el HashMap y Evaluar Calificaciones:**
+    - Utiliza un bucle (por ejemplo, **`for`** o **`foreach`**) para recorrer el **`HashMap`** de calificaciones.
+3. **Calcular Promedio, Nota Máxima y Mínima por Estudiante:**
+    - Después de evaluar las calificaciones, calcula y muestra para cada estudiante:
+        - **Promedio de Notas:** Suma todas las calificaciones y divide por la cantidad total de notas.
+        - **Nota Máxima:** Encuentra la calificación más alta en el **`ArrayList`**.
+        - **Nota Mínima:** Encuentra la calificación más baja en el **`ArrayList`**.
+4. **Menú de Opciones:**
+    - Muestra un menú con las siguientes opciones:
+        - **1. Mostrar el Promedio de Notas por Estudiante.**
+        - **2. Mostrar si la Nota es Aprobatoria o Reprobatoria por Estudiante.**
+        - **3. Mostrar si la Nota está por Sobre o por Debajo del Promedio del Curso por Estudiante.**
+        - **0. Salir del Menú.**
+    - Utiliza un bucle para permitir al usuario seleccionar opciones hasta que ingrese 0 para salir.
+5. **Operaciones del Menú:**
+    - **Opción 1: Mostrar el Promedio de Notas por Estudiante.**
+        - Muestra el promedio de notas por cada estudiante calculado previamente.
+    - **Opción 2: Mostrar si la Nota es Aprobatoria o Reprobatoria por Estudiante.**
+        - Solicita al usuario ingresar el nombre de un estudiante y una nota, luego verifica si es aprobatoria o reprobatoria según una nota de aprobación definida.
+    - **Opción 3: Mostrar si la Nota está por Sobre o por Debajo del Promedio del Curso por Estudiante.**
+        - Solicita al usuario ingresar el nombre de un estudiante y una nota, luego verifica si está por sobre o por debajo del promedio general.
+6. **Validaciones:**
+    - Implementa validaciones para asegurar que las notas ingresadas estén en un rango válido y que la cantidad de alumnos sea un número positivo.
