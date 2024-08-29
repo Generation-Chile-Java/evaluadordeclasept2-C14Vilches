@@ -59,25 +59,25 @@ public class LibretaDeNotas {
         //recorer hashmap (???)
         for (String nombreEstudiante : mapaEstudiantesNotas.keySet()) {
             ArrayList<Float> notas = mapaEstudiantesNotas.get(nombreEstudiante);
-            float sumaNotas = 0f;
+            float sumaNotas = 0f; // 0 como base, y f para que lleve decimales
             float promedio = 0f;
             float maxNotas = 0f;
             float minNotas = 10f;
 
             // Calcular la suma de notas, nota máxima y mínima
-            for (Float nota : notas) {
-                sumaNotas += nota;
+            for (Float nota : notas) { //por cada nota, arraylist notas ejecuta codigo
+                sumaNotas += nota; // acumula elementos del arraylist notas, y lo deja en float sumaNotas
                 // Nota Máxima
-                if (nota > maxNotas) {
-                    maxNotas = nota;
+                if (nota > maxNotas) { //si nota es menor que maxNotas
+                    maxNotas = nota; //convertir maxNotas en nota
                 }
                 // Nota Mínima
-                if (nota < minNotas) {
+                if (nota < minNotas) { //igual que arriba pero con minimo
                     minNotas = nota;
                 }
             }
             // Calcular el promedio
-            promedio = sumaNotas / notas.size();
+            promedio = sumaNotas / notas.size(); //entiendo
 
             //  Lista de resultados
             System.out.println("Nombre del estudiante: " + nombreEstudiante);
