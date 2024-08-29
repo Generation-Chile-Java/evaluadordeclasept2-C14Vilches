@@ -5,10 +5,10 @@
     - Abre tu entorno de desarrollo IntelliJ IDEA.
 2. **Crear Proyecto:**
     - Crea un nuevo proyecto llamado “EvaluadorDeClases”.
-3. **Crear Clase "Evaluador":**
-    - Dentro del proyecto, crea una nueva clase llamada **`Evaluador`**.
-4. **Implementar Código del Evaluador:**
-    - En la clase **`Evaluador`**, escribe el código para evaluar las calificaciones de un estudiante para tres materias distintas como mínimo.
+3. **Crear Clase "LibretaDeNotas":**
+    - Dentro del proyecto, crea una nueva clase llamada **`LibretaDeNotas`**.
+4. **Implementar Código del LibretaDeNotas:**
+    - En la clase **`LibretaDeNotas`**, escribe el código para evaluar las calificaciones de un estudiante para tres materias distintas como mínimo.
     - Pide al usuario que ingrese la calificación del estudiante por cada materia y guarda cada valor en su variable.
     - Utiliza estructuras condicionales (**`if`**, **`else if`**, **`else`**) para determinar y mostrar la calificación final correspondiente según las siguientes condiciones:
         - "No Aprobado" si la calificación es 3 o menos.
